@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Dela Gothic One', cursive;
+  letter-spacing: 3px;
+}
+html,body{
+  background-color: #B3C7D6FF;
+}
+
+header {
+  width:100vw;
+  padding: 10px;
+  background-color: #85B3D1FF;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:white;
+}
+
+main{
+  width:100vw;
+  padding: 10px;
+}
+footer{
+  background-color: #85B3D1FF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+main a{
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  margin-top: 0px;
+  margin-inline: 1px;
+}
+main a:hover{
+  background-color: black;
+  color: white;
+}
+main input{
+    padding: 10px;
+}
+
+main img{
+    padding-inline: 1px;
+}
+
+
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Split PFP Creator</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>SPLIT PROFILE PICTURE CREATOR</h1>
+            <menu>
+                <a href="https://ankushKun.github.io/projects"><i class="fa fa-home fa-3x"></i></a>
+                <a href="https://github.com/ankushKun/split-pfp"><i class="fa fa-github-alt fa-3x"></i></a>
+            </menu>
+        </center>
+
+    </header>
+    <hr>
+    <main>
+        <center>
+            <h3>SELECT IMAGE TO SPLIT (2:1 RATIO PREFERRED)</h3>
+            <p>supported filetypes : jpg, jpeg, png</p>
+            <input type="file" id="pfp-selector" accept=".jpg, .png, .jpeg" onchange="loadFile(event)">
+            <br>
+            <img alt="orig-image" id="orig-image" style="width:90vw">
+
+            <div class="flex-container" style="width:90vw">
+                <div>
+                    <img alt="left-image" id="left-image" style="width:45vw">
+                    <b>
+                        <h3 class="image-label"><a id="left-download" download="left">DOWNLOAD LEFT IMAGE</a></h3>
+                    </b>
+                </div>
+                <div>
+                    <img alt="right-image" id="right-image" style="width:45vw">
+                    <b>
+                        <h3 class="image-label"><a id="right-download" download="right">DOWNLOAD RIGHT IMAGE</a></h3>
+                    </b>
+                </div>
+            </div>
+            <br><br>
+        </center>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
